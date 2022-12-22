@@ -1,0 +1,26 @@
+
+
+//BASE
+@import './base/base';
+@import "./utils/breakpoints";
+
+
+//UTILS
+@import "./utils/variables.scss";
+@import "./utils/visually-hidden";
+@import "./utils/mixin";
+
+
+//COMPONENTS
+@import "./components/button";
+@import "./components/modal";
+
+//LAYOUT
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/features";
+@import "./layout/about";
+@import "./layout/team";
+@import "./layout/clients";
+@import "./layout/portfolio";
+@import "./layout/footer";

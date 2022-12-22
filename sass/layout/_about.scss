@@ -1,0 +1,47 @@
+/* Our activity */
+
+.our-activity {
+    margin-bottom: 94px;
+    margin-left: auto;
+    margin-right: auto;
+
+    & h2 {
+        margin-bottom: 50px;
+    }
+}
+
+.activity-images {
+    display: flex;
+
+    & li:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.activity-image-item {
+    position: relative;
+}
+
+.our-activity-description {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+    align-items: center;
+    justify-content: center;
+
+    & p {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: calc(16 / 14);
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    
+        color: $main-background-color;
+    }
+}
+

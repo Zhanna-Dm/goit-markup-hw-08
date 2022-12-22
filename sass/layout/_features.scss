@@ -1,0 +1,48 @@
+/* -Особливості- */
+
+.description {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    & h3 {
+        margin-top: 30px;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+}
+
+.description-blocks {
+    display: flex;
+
+    & li:not(:last-child) {
+        margin-right: 30px;
+    }
+    
+    & div {
+        height: 120px;
+
+        background-color: $background-third-color;
+        display: flex;
+        background-position: contain;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.description-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.desctiption-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    color: $text-grey-color;
+    margin-block-end: 0;
+    margin-block-start: 0;
+}

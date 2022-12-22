@@ -1,0 +1,253 @@
+/* Modal window */
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: opacity 250ms, visibility 250ms;
+    z-index: 1;
+
+   &.is-hidden .modal {
+        transform: scale(0.9);
+        }
+}
+
+.modal {
+    position: absolute;
+    width: 528px;
+    padding: 40px;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    background-color: $main-background-color;
+    border-radius: 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+
+    & .close-sign {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        top: 8px;
+        right: 8px;
+        cursor: pointer;
+        padding: 0;
+        border-radius: 50%;
+    
+        fill: black;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    & .close-sign:hover,
+    & .close-sign:focus {
+        fill: $link-hover-color;
+    }
+}
+
+.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Modal widnow content */
+
+textarea {
+    resize: none;
+}
+
+.modal-title {
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.form-field {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.comment {
+    margin-bottom: 20px;
+}
+
+.form-field label {
+    margin-bottom: 4px;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.01em;
+    color: $text-grey-color;
+}
+
+
+/* svg */
+
+.modal-icon {
+    position: absolute;
+    top: 50%;
+    left: 22px;
+    transform: translate(-50%);
+    fill: $main-color;
+
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* input */
+
+.form-field input,
+.form-field textarea {
+    margin: 0;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.01em;
+    color: $text-grey-color;
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-field input {
+    padding: 11px 12px 11px 42px;
+}
+
+.form-field textarea {
+    padding: 11px 12px;
+}
+
+.modal-icon use {
+    fill: $main-color;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input:focus+.modal-icon use,
+.form-input:hover+.modal-icon use {
+    fill: $link-hover-color;
+}
+
+.form-input:focus,
+.form-input:hover {
+    outline: none;
+    border-color: $link-hover-color;
+}
+
+.form-field input::placeholder {
+    padding-left: 16px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.modal p,
+.policy {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(23 / 20);
+    letter-spacing: 0.03em;
+}
+
+/* checkbox policy */
+
+.agreement-checkbox {
+    position: relative;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.policy label {
+    margin-bottom: 12px;
+    margin-left: 35px;
+}
+
+.checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.checkbox-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid $main-color;
+    border-radius: 4px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.checkbox:checked+.checkbox-icon {
+    background-color: $link-hover-color;
+    background-image: url('../../images/icons/icon-check.svg');
+    background-size: contain;
+    background-origin: border-box;
+    border-color: $link-hover-color;
+}
+
+.agreement-checkbox:focus-within .modal-checkbox-active {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+/* policy link and text */
+
+.agreement-checkbox label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    color: $text-grey-color;
+}
+
+.agreement-checkbox a {
+    text-decoration-line: underline;
+    color: $link-hover-color;
+}
+
+/* Modal - Submit-button */
+
+.submit-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    letter-spacing: 0.06em;
+    color: $main-background-color;
+
+    background-color: $link-hover-color;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: $button-hover-background;
+    }
+}
+
