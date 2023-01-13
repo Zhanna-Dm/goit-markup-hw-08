@@ -20,76 +20,81 @@
   </head>
 
   <body class="body">
-     <header class="header">
+    <header class="header">
       <!--Menu Nav-->
-      <div class="container main-nav">
-          <nav class="header-nav">
+      <div class="container navigation__box">
+        <nav class="navigation">
           <a href="" class="logo">
-            <span class="logo-web">Web</span>
-            <span class="logo-studio-header">Studio</span>
+            <span class="logo__web">Web</span>
+            <span class="logo__studio--header">Studio</span>
           </a>
-          <ul class="header-list">
-            <li class="header-list-item">
-              <a class="header-list-link header-link active-link" href="./index.html"
-                >Студія</a>
+
+          <ul class="navigation__items">
+            <li class="navigation__item">
+              <a class="navigation__link link--active
+              " href="./index.html">Студія</a>
             </li>
-            <li class="header-list-item">
-              <a class="current"
+            <li class="navigation__item">
+              <a
+                class="navigation__item--current"
                 href="./portfolio.html"
-                >Портфоліо</a>
+                >Портфоліо</a
+              >
             </li>
-            <li class="header-list-item">
-              <a class="header-list-link header-link link-contact active-link"
-                href="#">Контакти</a
+            <li class="navigation__item">
+              <a
+                class="navigation__link link--active "
+                href="#"
+                >Контакти</a
               >
             </li>
           </ul>
         </nav>
 
-      <!--Contacts-->
-        <ul class="contacts-header">
-          <li class="header-list-item"> 
+        <!--Contacts-->
+        <ul class="contacts--header">
+          <li class="navigation__item"> 
             <a
-              class="header-contact-link header-link active-link"
+              class="contacts__link navigation__link link--active"
               href="mailto:info@devstudio.com"
             >
-            <svg class="header-contact-icon header-tel-icon" width="16" height="12">
+            <svg class="contacts__icon" width="16" height="12">
                 <use href="./images/icons.svg#envelope"></use>
-              </svg>
-            info@devstudio.com
+            </svg>
+              info@devstudio.com
             </a>
           </li>
-          <li class="header-list-item">
+          <li class="navigation__item">
             <a
-              class="header-contact-link header-link active-link"
+              class="contacts__link navigation__link link--active"
               href="tel:+380961111111"
             >
-              <svg class="header-contact-icon header-mail-icon" width="10" height="16">
+              <svg class="contacts__icon" width="10" height="16">
                 <use href="./images/icons.svg#smartphone"></use>
               </svg>
               +38 096 111 11 11
             </a>
           </li>
         </ul>
-
       </div>
     </header>
 
-    <main class="portfolio-block">
+
+    <main>
         <!--Filters-->
         <section class="portfolio container">
             <h1 class="visually-hidden">Портфоліо</h1>
-            <ul class="portfolio-filters">
+            <ul class="portfolio__filters">
                 <li>
                 <button
-                class="portfolio-filter-button cursor button button-usi"
+                class="portfolio-filters__btn button--usi"
                 type="button">
                 Усі
                 </button>
             </li>
             <li>
               <button
-                class="portfolio-filter-button cursor button"
+                class="portfolio-filters__btn"
                 type="button"
               >
                 Веб-сайти
@@ -97,7 +102,7 @@
             </li>
             <li>
               <button
-                class="portfolio-filter-button cursor button"
+                class="portfolio-filters__btn"
                 type="button"
               >
                 Додатки
@@ -105,7 +110,7 @@
             </li>
             <li>
               <button
-                class="portfolio-filter-button cursor button"
+                class="portfolio-filters__btn"
                 type="button"
               >
                 Дизайн
@@ -113,7 +118,7 @@
             </li>
             <li>
               <button
-                class="portfolio-filter-button cursor button"
+                class="portfolio-filters__btn"
                 type="button"
               >
                 Маркетинг
@@ -123,9 +128,9 @@
   
           <!--Project cards-->
           <ul class="project-cards">
-            <li class="project-box">
+            <li class="project-cards__box">
               <a href="#">
-                <div class="project-image backdrop">
+                <div class="project-cards__image backdrop">
                   <img
                     src="images/portfolio/tehnokrjac.jpg"
                     alt="веб-сайт Технокряк"
@@ -148,9 +153,9 @@
               </a>
             </li>
 
-            <li class="project-box">
+            <li class="project-cards__box">
               <a href="#">
-                <div class="project-image backdrop">
+                <div class="project-cards__image backdrop">
                   <img
                     src="images/portfolio/newOrlean.jpg"
                     alt="Постер New Orlean vs Golden Star"
@@ -172,9 +177,9 @@
               </a>
             </li>
 
-            <li class="project-box">
+            <li class="project-cards__box">
               <a href="#">
-                <div class="project-image backdrop">
+                <div class="project-cards__image backdrop">
                   <img
                     src="images/portfolio/seafood.jpg"
                     alt="фото додатку Ресторан Seafood"
@@ -196,9 +201,9 @@
               </a>
             </li>
 
-            <li class="project-box">
+            <li class="project-cards__box">
               <a href="#">
-                <div class="project-image backdrop">
+                <div class="project-cards__image backdrop">
                   <img
                     src="images/portfolio/prime.jpg"
                     alt="фото Проєкт Prime"
@@ -220,9 +225,9 @@
               </a>
             </li>
 
-            <li class="project-box">
+            <li class="project-cards__box">
               <a href="#">
-                <div class="project-image backdrop">
+                <div class="project-cards__image backdrop">
                   <img
                     src="images/portfolio/boxes.jpg"
                     alt="фото Проєкт Boxes"
@@ -244,9 +249,9 @@
               </a>
             </li>
 
-            <li class="project-box">
+            <li class="project-cards__box">
               <a href="#">
-                <div class="project-image backdrop">
+                <div class="project-cards__image backdrop">
                   <img
                     src="images/portfolio/inspiration.jpg"
                     alt="фото Inspiration has no Borders"
@@ -268,9 +273,9 @@
               </a>
             </li>
 
-            <li class="project-box">
+            <li class="project-cards__box">
               <a href="#">
-                <div class="project-image backdrop">
+                <div class="project-cards__image backdrop">
                   <img
                     src="images/portfolio/limited-edition.jpg"
                     alt="фото Видання Limited Edition"
@@ -292,9 +297,9 @@
               </a>
             </li>
 
-            <li class="project-box">
+            <li class="project-cards__box">
               <a href="#">
-                <div class="project-image backdrop">
+                <div class="project-cards__image backdrop">
                   <img
                     src="images/portfolio/lab.jpg"
                     alt="фото Проєкт LAB"
@@ -316,9 +321,9 @@
               </a>
             </li>
             
-            <li class="project-box">
+            <li class="project-cards__box">
               <a href="#">
-                <div class="project-image backdrop">
+                <div class="project-cards__image backdrop">
                   <img
                     src="images/portfolio/growing-business.jpg"
                     alt="фото Growing Business"
@@ -343,31 +348,31 @@
         </section>
     </main>
 
-      <footer class="footer">
-      <div class="container footer-block">
-        <div class="footer-block-item footer-block-contacts">
-            <a href="" class="logo logo-footer">
-              <span class="logo-web">Web</span
-              ><span class="logo-studio-footer">Studio</span>
+          <footer class="footer">
+      <div class="container footer__blocks">
+        <div class="footer-blocks__item footer__contacts">
+            <a href="" class="logo logo--footer">
+              <span class="logo__web">Web</span
+              ><span class="logo__studio--footer">Studio</span>
             </a>
             <address>
-              <ul class="contacts-footer">
-                <li class="contact-footer-address active-link">
+              <ul class="footer-contacts__list">
+                <li class="footer-contacts__address link--active">
                   <a
-                    class="active-link"
+                    class="link--active"
                     href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
                     target="_blank"
                     rel="noopener noreferrer"
                     >м. Київ, пр-т Лесі Українки, 26</a
                   >
                 </li>
-                <li class="contacts-footer-item">
-                  <a class="active-link" href="mailto:info@devstudio.com">
+                <li class="footer-contacts__item">
+                  <a class="link--active" href="mailto:info@devstudio.com">
                     info@devstudio.com
                   </a>
                 </li>
-                <li class="contacts-footer-item">
-                  <a class="active-link" href="tel:+380961111111">
+                <li class="footer-contacts__item">
+                  <a class="link--active" href="tel:+380961111111">
                     +38 096 111 11 11
                   </a>
                 </li>
@@ -375,10 +380,10 @@
             </address>
           </div>
 
-          <div class="footer-block-item footer-block-soclinks">
+          <div class="footer-blocks__item footer__soclinks">
             <p>Приєднуйтесь</p>
-            <ul class="social-icons list">
-              <li class="social-item">
+            <ul class="footer__social-icons">
+              <li class="footer__soc-icon">
                 <a href="" class="social-link link">
                   <svg class="social-icon" width="20" height="20">
                     <use href="./images/icons.svg#sl-instagram"></use>
@@ -386,7 +391,7 @@
                 </a>
               </li>
 
-              <li class="social-item">
+              <li class="footer__soc-icon">
                 <a href="" class="social-link link">
                   <svg class="social-icon" width="20" height="20">
                     <use href="./images/icons.svg#sl-twitter"></use>
@@ -394,7 +399,7 @@
                 </a>
               </li>
 
-              <li class="social-item">
+              <li class="footer__soc-icon">
                 <a href="" class="social-link link">
                   <svg class="social-icon" width="20" height="20">
                     <use href="./images/icons.svg#sl-facebook"></use>
@@ -402,7 +407,7 @@
                 </a>
               </li>
 
-              <li class="social-item">
+              <li class="footer__soc-icon">
                 <a href="" class="social-link link">
                   <svg class="social-icon" width="20" height="20">
                     <use href="./images/icons.svg#sl-linkedin"></use>
@@ -412,24 +417,22 @@
             </ul>
         </div>
 
-        <div class="footer-block-item footer-block-subsctiption">
+        <div class="footer-blocks__item footer__subsctiption">
           <form name="subsctiption-form" autocomplete="on" novalidate>
 
             <p>Підпишіться на розсилку</p> 
 
             <div class="subscription-line">
-              <div class="form-field">
+              <div class="modal__input-box">
                 <label for="mail"></label>
                 <input type="email" name="mail" id="mail" placeholder="E-mail"/>
               </div>
 
-              <button type="submit" class="subscribe-button">
-                <!-- <div class="submit-button-item"> -->
+              <button type="submit" class="btn--subscription">
                   Підписатися
-                  <svg class="subscription-icon" width="24" height="24">
+                  <svg class="icon--subscription" width="24" height="24">
                       <use href="./images/icons.svg#send"></use>
                   </svg>
-                <!-- </div> -->
               </button>
             </div>
             
@@ -438,8 +441,5 @@
 
       </div>
     </footer>
-
-    <script src="./js/modal.js"></script>
-
   </body>
 </html>

@@ -1,6 +1,6 @@
 /* Our activity */
 
-.our-activity {
+.services {
     margin-bottom: 94px;
     margin-left: auto;
     margin-right: auto;
@@ -10,7 +10,7 @@
     }
 }
 
-.activity-images {
+.services__blocs {
     display: flex;
 
     & li:not(:last-child) {
@@ -18,11 +18,11 @@
     }
 }
 
-.activity-image-item {
+.services__item {
     position: relative;
 }
 
-.our-activity-description {
+.services__name {
     position: absolute;
     bottom: 0;
     right: 0;

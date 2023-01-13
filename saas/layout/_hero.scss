@@ -1,0 +1,46 @@
+/* Banner styles */
+
+.hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    min-height: 400px;
+    min-width: 480px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../../images/main/bcg-hero_mob.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-right: auto;
+    margin-left: auto;
+
+    @media (min-width: $tablet) {
+        width: $tablet;
+        // min-width: 768px;
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url('../../images/main/bcg-hero_tab.jpg');
+    }
+
+    @media (min-width: $desktop) {
+        // width: $desktop;
+        min-height: 600px;
+        min-width: 1600px;
+        padding-top: 200px;
+        padding-bottom: 200px;
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url('../../images/main/bcg-hero_desc.jpg');
+    }
+}
+
+.hero__text {
+    font-size: 26px;
+    line-height: calc(42 / 26);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $main-background-color;
+
+    @media (min-width: $desktop) {
+        font-size: 44px;
+        line-height: calc(60 / 44);
+    }
+}
+

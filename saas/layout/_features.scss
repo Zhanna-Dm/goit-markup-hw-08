@@ -1,0 +1,73 @@
+/* -Особливості- */
+
+.features .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }   
+}
+
+.features {
+    & h3 {
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+  
+    @media (min-width:$tablet) {
+      margin: -15px;
+  }
+}
+
+.features__items {
+    li:not(:last-child) {
+        margin-bottom: 30px;
+        }
+    
+    @media (min-width:$tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }    
+}
+
+.features__item {
+    @media (min-width:$tablet) {
+        width: calc (
+            (100% - 2 * 15px) / 2
+        );
+        margin: 15px;
+        }
+}
+
+
+.features__picture-box {
+    // max-width: 450px;
+    min-height: 120px;
+    margin-bottom: 30px;
+
+    background-color: $background-third-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.features__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.features__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    color: $text-grey-color;
+    margin-block-end: 0;
+    margin-block-start: 0;
+}

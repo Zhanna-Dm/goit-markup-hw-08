@@ -1,0 +1,87 @@
+html {
+    box-sizing: border-box;
+
+    height: 796px;
+        @media (min-width:$tablet) {
+            height: 1024px;
+        }
+
+        @media (min-width:$tablet) {
+            height: 1024px;
+        }
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    color: $main-color;
+    background-color: $main-background-color;
+}
+
+a {
+    &:visited,
+    &:link,
+    &:active {
+        color: $main-color;
+    }
+}
+
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: orange;
+
+    @media screen and (min-width:480px) {
+        // width: 480px;
+        background-color: bisque;
+        }
+
+    @media screen and (min-width:768px) {
+        width: 768px;
+        background-color: olive;
+    }
+
+    @media screen and (min-width:1200px) {
+        width: 1200px;
+        background-color: palevioletred;
+    }
+}
+
+h1, h2, h3 {
+    text-align: center;
+    letter-spacing: 0.03em;
+        margin-top: 0;
+        margin-bottom: 0;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: calc(60 / 44);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $main-background-color;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    letter-spacing: 0.03em;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    letter-spacing: 0.03em;
+}

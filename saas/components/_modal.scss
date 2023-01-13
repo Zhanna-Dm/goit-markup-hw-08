@@ -29,27 +29,27 @@
     background-color: $main-background-color;
     border-radius: 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
 
-    & .close-sign {
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    
-        top: 8px;
-        right: 8px;
-        cursor: pointer;
-        padding: 0;
-        border-radius: 50%;
-    
-        fill: black;
-        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
+.modal__close-icon {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    & .close-sign:hover,
-    & .close-sign:focus {
-        fill: $link-hover-color;
-    }
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+    padding: 0;
+    border-radius: 50%;
+
+    fill: black;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__close-icon:hover,
+.modal__close-icon:focus {
+    fill: $link-hover-color;
 }
 
 .is-hidden {
@@ -64,23 +64,23 @@ textarea {
     resize: none;
 }
 
-.modal-title {
+.modal__title {
     margin-bottom: 12px;
     text-align: center;
 }
 
-.form-field {
+.modal__input-box {
     position: relative;
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
 }
 
-.comment {
+.comment-box {
     margin-bottom: 20px;
 }
 
-.form-field label {
+.modal__input-box label {
     margin-bottom: 4px;
 
     font-weight: 400;
@@ -106,8 +106,8 @@ textarea {
 
 /* input */
 
-.form-field input,
-.form-field textarea {
+.modal__input-box input,
+.modal__input-box textarea {
     margin: 0;
     border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -121,11 +121,11 @@ textarea {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-field input {
+.modal__input-box input {
     padding: 11px 12px 11px 42px;
 }
 
-.form-field textarea {
+.modal__input-box textarea {
     padding: 11px 12px;
 }
 
@@ -134,18 +134,18 @@ textarea {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-input:focus+.modal-icon use,
-.form-input:hover+.modal-icon use {
+.modal__input-field:focus+.modal-icon use,
+.modal__input-field:hover+.modal-icon use {
     fill: $link-hover-color;
 }
 
-.form-input:focus,
-.form-input:hover {
+.modal__input-field:focus,
+.modal__input-field:hover {
     outline: none;
     border-color: $link-hover-color;
 }
 
-.form-field input::placeholder {
+.modal__input-box input::placeholder {
     padding-left: 16px;
     font-weight: 400;
     font-size: 12px;
@@ -165,7 +165,7 @@ textarea {
 
 /* checkbox policy */
 
-.agreement-checkbox {
+.modal__agreement-line {
     position: relative;
     margin-bottom: 30px;
     text-align: center;
@@ -182,7 +182,7 @@ textarea {
     -moz-appearance: none;
 }
 
-.checkbox-icon {
+.checkbox--is-filled {
     display: inline-block;
     width: 16px;
     height: 16px;
@@ -192,7 +192,7 @@ textarea {
     cursor: pointer;
 }
 
-.checkbox:checked+.checkbox-icon {
+.checkbox:checked+.checkbox--is-filled {
     background-color: $link-hover-color;
     background-image: url('../../images/icons/icon-check.svg');
     background-size: contain;
@@ -200,14 +200,14 @@ textarea {
     border-color: $link-hover-color;
 }
 
-.agreement-checkbox:focus-within .modal-checkbox-active {
+.modal__agreement-line:focus-within .modal-checkbox-active {
     opacity: 1;
     transform: translateY(0px);
 }
 
 /* policy link and text */
 
-.agreement-checkbox label {
+.modal__agreement-line label {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -219,14 +219,14 @@ textarea {
     color: $text-grey-color;
 }
 
-.agreement-checkbox a {
+.modal__agreement-line a {
     text-decoration-line: underline;
     color: $link-hover-color;
 }
 
 /* Modal - Submit-button */
 
-.submit-button {
+.btn__submit {
     display: block;
     margin-left: auto;
     margin-right: auto;
