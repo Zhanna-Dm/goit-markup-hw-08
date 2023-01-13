@@ -31,15 +31,15 @@
 
 .features__item {
     @media (min-width:$tablet) {
-        width: 50%;
+        // width: 50%;
         width: calc (100% -30px) / 2;
         margin: 15px;
         }
 
-    // @media (min-width:$tablet) {
-    //     width: calc ((100% - 3 * 15px) / 3);
-    //     margin: 15px;
-    // }
+    @media (min-width:$tablet) {
+        width: calc (100% -45px) / 3;
+        margin: 15px;
+    }
 }
 
 
