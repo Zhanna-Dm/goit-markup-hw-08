@@ -59,16 +59,16 @@ button {
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  height: 796px;
+  min-height: 796px;
 }
 @media (min-width: 768px) {
   html {
-    height: 1024px;
+    min-height: 1024px;
   }
 }
 @media (min-width: 768px) {
   html {
-    height: 1024px;
+    min-height: 1024px;
   }
 }
 
@@ -99,17 +99,20 @@ a:visited, a:link, a:active {
 }
 @media screen and (min-width: 480px) {
   .container {
+    width: 480px;
     background-color: bisque;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
+    background-color: olivedrab;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
+    background-color: palevioletred;
   }
 }
 
@@ -630,7 +633,6 @@ a.navigation__item--current {
   padding-top: 118px;
   padding-bottom: 118px;
   min-height: 400px;
-  min-width: 480px;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/main/bcg-hero_mob.jpg");
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/main/bcg-hero_mob.jpg");
   background-repeat: no-repeat;
@@ -676,6 +678,11 @@ a.navigation__item--current {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media (min-width: 768px) {
+  .features .container {
+    padding: -15px;
+  }
+}
 @media (min-width: 1200px) {
   .features .container {
     padding-top: 94px;
@@ -683,13 +690,10 @@ a.navigation__item--current {
   }
 }
 
-.features h3 {
-  margin-top: 30px;
-  margin-bottom: 10px;
-}
-
-.features__items li:not(:last-child) {
-  margin-bottom: 30px;
+@media (max-width: 768px) {
+  .features__items li:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 @media (min-width: 768px) {
   .features__items {
@@ -698,13 +702,15 @@ a.navigation__item--current {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: -15px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
 @media (min-width: 768px) {
   .features__item {
-    width: calc 100% -30px;
+    width: 50%;
     margin: 15px;
   }
 }
@@ -722,6 +728,11 @@ a.navigation__item--current {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.features h3 {
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .features__title {

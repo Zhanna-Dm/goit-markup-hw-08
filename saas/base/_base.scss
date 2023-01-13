@@ -1,13 +1,13 @@
 html {
     box-sizing: border-box;
 
-    height: 796px;
+    min-height: 796px;
         @media (min-width:$tablet) {
-            height: 1024px;
+            min-height: 1024px;
         }
 
         @media (min-width:$tablet) {
-            height: 1024px;
+            min-height: 1024px;
         }
 }
 
@@ -41,13 +41,13 @@ a {
     background-color: orange;
 
     @media screen and (min-width:480px) {
-        // width: 480px;
+        width: 480px;
         background-color: bisque;
         }
 
     @media screen and (min-width:768px) {
         width: 768px;
-        background-color: olive;
+        background-color: olivedrab;
     }
 
     @media screen and (min-width:1200px) {
