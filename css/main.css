@@ -711,6 +711,7 @@ a.navigation__item--current {
 @media (min-width: 768px) {
   .features__item {
     width: 50%;
+    width: calc 100% -30px/2;
     margin: 15px;
   }
 }

@@ -32,7 +32,7 @@
 .features__item {
     @media (min-width:$tablet) {
         width: 50%;
-        // width: calc (100% -30px) / 2;
+        width: calc (100% -30px) / 2;
         margin: 15px;
         }
 
