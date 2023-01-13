@@ -4,24 +4,24 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
-    @media (min-width:$tablet) {
+    @media screen and (min-width:$tablet) {
             padding: -15px;
         }
 
-    @media (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
         padding-top: 94px;
         padding-bottom: 94px;
     }   
 }
 
 .features__items {
-    @media (max-width:$tablet) {
+    @media screen and (max-width:$tablet) {
         li:not(:last-child) {
              margin-bottom: 30px;
         }
     }
 
-    @media (min-width:$tablet) {
+    @media screen and (min-width:$tablet) {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -30,15 +30,16 @@
     
 
 .features__item {
-    @media (min-width:$tablet) {
-        // width: 50%;
-        width: calc (100% -30px) / 2;
-        margin: 15px;
+    @media screen and (min-width:$tablet) and (max-width: $desktop) {
+        width: 50%;
+        // width: calc (100% -30px) / 2;
+        // margin: 15px;
         }
 
-    @media (min-width:$tablet) {
-        width: calc (100% -45px) / 3;
-        margin: 15px;
+    @media screen and (min-width:$desktop) {
+        // width: 33.333%;
+        // width: calc (100% -45px) / 3;
+        // margin: 15px;
     }
 }
 
