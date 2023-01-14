@@ -5,8 +5,8 @@
     padding-bottom: 60px;
 
     @media screen and (min-width:$tablet) {
-            padding: -15px;
-        }
+        padding: 45px 0px ;
+    }
 
     @media screen and (min-width: 1200px) {
         padding-top: 94px;
@@ -15,37 +15,47 @@
 }
 
 .features__items {
-    @media screen and (max-width:$tablet) {
-        li:not(:last-child) {
-             margin-bottom: 30px;
+    &:li:not(:last-child) {
+        @media screen and (max-width:767px) {
+            margin-bottom: 30px;
+        }
+
+        @media screen and (min-width:$desktop) {
+            margin-right: 30px;
         }
     }
 
     @media screen and (min-width:$tablet) {
         display: flex;
-        flex-wrap: wrap;
         align-items: center;
     }
-}
-    
 
-.features__item {
-    @media screen and (min-width:$tablet) and (max-width: $desktop) {
-        width: 50%;
-        // width: calc (100% -30px) / 2;
-        // margin: 15px;
-        }
-
-    @media screen and (min-width:$desktop) {
-        // width: 33.333%;
-        // width: calc (100% -45px) / 3;
-        // margin: 15px;
+    @media (min-width:$tablet) and (max-width:$desktop) {
+        flex-wrap: wrap;
     }
 }
+
+    
+.features__item {
+    // :not(:last-child) {
+    //     @media screen and (max-width:$tablet) {
+    //             margin-bottom: 30px;
+    //     }  
+    //  }
+
+    @media (min-width:$tablet) and (max-width:$desktop) {
+        // width: 49%;
+        // width: 100% / 2;
+        // width: 50% content-box;
+        width: calc(50% - 30px);
+        margin: 15px;
+    }
+}
+
 
 
 .features__picture-box {
-    min-height: 120px;
+    min-height: 125px;
     margin-bottom: 30px;
 
     background-color: $background-third-color;
