@@ -32,6 +32,7 @@
 
     @media (min-width:$tablet) and (max-width:$desktop) {
         flex-wrap: wrap;
+        margin: -15px;
     }
 }
 
@@ -59,7 +60,7 @@
 
 
 .features__picture-box {
-    min-height: 125px;
+    height: 125px;
     margin-bottom: 30px;
 
     background-color: $background-third-color;

@@ -1,6 +1,11 @@
 /* Our activity */
 
 .services {
+
+    @media (max-width: 1199px) {
+        display: none;  
+    }
+    
     margin-bottom: 94px;
     margin-left: auto;
     margin-right: auto;

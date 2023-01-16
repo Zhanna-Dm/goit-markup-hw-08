@@ -782,7 +782,7 @@ a.navigation__item--current {
 @media (min-width: 1200px) {
   .hero {
     min-height: 600px;
-    min-width: 1600px;
+    min-width: 1200px;
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/main/bcg-hero_desc.jpg");
@@ -835,6 +835,7 @@ a.navigation__item--current {
   .features__items {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin: -15px;
   }
 }
 
@@ -856,7 +857,7 @@ a.navigation__item--current {
 }
 
 .features__picture-box {
-  min-height: 125px;
+  height: 125px;
   margin-bottom: 30px;
   background-color: #f5f4fa;
   display: -webkit-box;
@@ -900,6 +901,11 @@ a.navigation__item--current {
   margin-bottom: 94px;
   margin-left: auto;
   margin-right: auto;
+}
+@media (max-width: 1199px) {
+  .services {
+    display: none;
+  }
 }
 .services h2 {
   margin-bottom: 50px;
