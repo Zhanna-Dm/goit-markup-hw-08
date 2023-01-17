@@ -20,6 +20,7 @@
     @media (max-width: $tablet-before) {
         flex-wrap: wrap;
         justify-content: flex-start;
+        gap: 8px;
         // width: 326px;
     }
 
@@ -35,8 +36,8 @@
     }
 
     @media (max-width: $tablet-before) {
-        width: calc((80% - 2 *8px) / 3);
-        margin-left: 0;
+        width: calc((100% ) / 3);
+        // margin-left: 0;
     }
 }
 
@@ -88,7 +89,6 @@
  
 }
 
- 
 
 .project-cards li {
     @media (max-width: 767px) {

@@ -318,7 +318,7 @@ h3 {
 }
 
 .portfolio-filters__btn {
-  display: inline-block;
+  display: block;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.625;
@@ -1299,6 +1299,7 @@ a.navigation__item--current {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    gap: 8px;
   }
 }
 
@@ -1307,8 +1308,7 @@ a.navigation__item--current {
 }
 @media (max-width: 767px) {
   .portfolio__filters li {
-    width: calc((80% - 16px) / 3);
-    margin-left: 0;
+    width: 33.3333333333%;
   }
 }
 
