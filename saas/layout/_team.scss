@@ -1,8 +1,20 @@
 /* Our team */
 
+.team .container {
+    padding: 60px 0px;
+
+    @media (min-width:$tablet) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+
 .team {
-    padding-top: 94px;
-    padding-bottom: 94px;
     margin-left: auto;
     margin-right: auto;
     background-color: $background-third-color;
@@ -10,19 +22,16 @@
     & h2 {
         margin-bottom: 50px;
     }
-    
-    & .team__list {
-        display: flex;
-    }
 
     & li {
         background: #FFFFFF;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
     }
-
-    & li:not(:last-child) {
-        margin-right: 10px;
+    @media (min-width: $desktop) {
+        & li:not(:last-child) {
+            margin-right: 10px;
+        }
     }
     
     & p {
@@ -32,9 +41,35 @@
     }
 }
 
-.team__list .team__member:not(:last-child) {
-    margin-right: 30px;
+.team__list { 
+    @media screen and (min-width:$tablet) {
+        display: flex;
+        align-items: center;
+    }
+        
+    @media (min-width:$tablet) and (max-width:1199px) {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
 }
+
+
+.team__member {
+    &:not(:last-child) {
+        @media screen and (max-width:767px) {
+            margin-bottom: 30px;
+        }
+
+        @media screen and (min-width:$desktop) {
+            margin-right: 30px;
+        }
+    }
+
+    @media (min-width:$tablet) and (max-width:$desktop) {
+        width: calc(50% - 15px);
+    }
+}
+
 
 .team-member__meta {
     padding-top: 30px;

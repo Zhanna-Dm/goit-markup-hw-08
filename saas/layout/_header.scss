@@ -4,12 +4,6 @@
     display: flex;
 }
 
-// .nav__mob-hidden {
-//     @media screen and (max-width: $tablet) {
-//         overflow: hidden;
-//     }
-// }
-
 .header {
     border-bottom: 1px solid #ECECEC;
 }
@@ -57,6 +51,93 @@
     color: $main-background-color;
 }
 
+.nav__hamburger-menu {
+    @media (max-width:$tablet-before) {
+        display: none;
+    }
+}
+
+.hamburger-menu__button {
+    display: inline-flex;
+    margin: 0;
+    padding:11px;
+    border: none;
+    background-color: aqua;
+    background-color: transparent;  
+}
+
+.icon-cross {
+     display: none;
+ }
+
+ .icon-cross {
+     position: absolute;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+     top: 8px;
+     right: 8px;
+     cursor: pointer;
+     padding: 0;
+     border-radius: 50%;
+
+     fill: black;
+     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
+
+ .modal__close-icon:hover,
+ .modal__close-icon:focus {
+     fill: $link-hover-color;
+ }
+
+/* Modal window */
+
+// .backdrop {
+//     position: fixed;
+//     top: 0;
+//     bottom: 0;
+//     left: 0;
+//     right: 0;
+//     opacity: 1;
+//     background-color: rgba(0, 0, 0, 0.2);
+//     transition: opacity 250ms, visibility 250ms;
+//     z-index: 1;
+
+//     &.is-hidden .modal {
+//         transform: scale(0.9);
+//     }
+// }
+
+// .modal {
+//     position: absolute;
+//     max-width: 469px;
+//     padding: 40px;
+
+//     top: 20%;
+//     // top: 50%;
+//     left: 5%;
+//     transform: translate(-20%, -50%) scale(1);
+//     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+//     background-color: $main-background-color;
+//     border-radius: 4px;
+//     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+
+//     @media (min-width:$desktop) {
+//         width: 528px;
+//         top: 75%;
+//         left: 50%;
+//         transform: translate(-50%, -50%) scale(1);
+//     }
+// }
+
+
+// .is-hidden {
+//     visibility: hidden;
+//     opacity: 0;
+//     pointer-events: none;
+// }
 
 /* Nav styles, Contacts */
 

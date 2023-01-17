@@ -28,8 +28,17 @@
             <span class="logo__web">Web</span>
             <span class="logo__studio--header">Studio</span>
           </a>
+          <button type="button" class="hamburger-menu__button">
+            <svg 
+            width="40" 
+            height="40"
+            aria-label="Переключатель мобильного меню">
+              <use class="icon-cross" href="./images/icons.svg#icon-hamb-menu_close"></use>
+              <use class="icon-menu" href="./images/icons.svg#icon-hamb-menu_open"></use>
+            </svg>
+          </button>
 
-          <div class="nav__mob-hidden">
+          <div class="nav__hamburger-menu">
             <ul class="navigation__items">
             <li class="navigation__item">
               <a class="navigation__item--current" href="./index.html">Студія</a>
@@ -49,11 +58,8 @@
               >
             </li>
           </ul>
-          </div>
-          
-        </nav>
 
-        <!--Contacts-->
+            <!--Contacts-->
         <ul class="contacts--header nav__mob-hidden">
           <li class="navigation__item"> 
             <a
@@ -78,6 +84,9 @@
             </a>
           </li>
         </ul>
+          </div>
+          
+        </nav>
       </div>
     </header>
 
@@ -279,7 +288,7 @@
               <img
                 src="images/igor.jpg"
                 alt="фото Ігор Дем'яненко"
-                width="270"
+                min-width="270"
                 height="260"
               />
               <div class="team-member__meta">
@@ -325,7 +334,7 @@
               <img
                 src="images/olga.jpg"
                 alt="фото Ольга Рєпіна"
-                width="270"
+                min-width="270"
                 height="260"
               />
               <div class="team-member__meta">
@@ -371,7 +380,7 @@
               <img
                 src="images/mycola.jpg"
                 alt="фото Микола Тарасов"
-                width="270"
+                min-width="270"
                 height="260"
               />
               <div class="team-member__meta">
@@ -417,7 +426,7 @@
               <img
                 src="images/mychailo.jpg"
                 alt="фото Михайло Єрмаков"
-                width="270"
+                min-width="270"
                 height="260"
               />
               <div class="team-member__meta">

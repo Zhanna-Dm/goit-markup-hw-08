@@ -4,9 +4,9 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
-    @media screen and (min-width:$tablet) and (max-width:1199px) {
-        padding: 45px 0px ;
-    }
+    // @media screen and (min-width:$tablet) and (max-width:1199px) {
+    //     padding: 45px 0px;
+    // }
 
     @media screen and (min-width: 1200px) {
         padding-top: 94px;
@@ -27,12 +27,12 @@
 
     @media screen and (min-width:$tablet) {
         display: flex;
-        align-items: center;
+        // align-items: flex-start;
     }
 
     @media (min-width:$tablet) and (max-width:$desktop) {
         flex-wrap: wrap;
-        margin: -15px;
+        gap: 30px;
     }
 }
 
@@ -52,8 +52,8 @@
         // width: 49%;
         // width: 100% / 2;
         // width: 50% content-box;
-        width: calc(50% - 30px);
-        margin: 15px;
+        width: calc(50% - 15px);
+        // margin: 15px;
     }
 }
 
