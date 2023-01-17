@@ -23,21 +23,17 @@
         gap: 8px;
         // width: 326px;
     }
-
-    // @media (max-width: 1199px) {
-    //     // flex-wrap: wrap;
-    //     // justify-content: flex-start;
-    // }
 }
 
 .portfolio__filters li {
     &:not(:first-child) {
-        margin-left: 8px;
+        @media (min-width: $tablet) {
+            margin-left: 8px;
+        }
     }
 
     @media (max-width: $tablet-before) {
-        width: calc((100% ) / 3);
-        // margin-left: 0;
+        width: calc(33.33% - 15px);
     }
 }
 
@@ -99,6 +95,7 @@
 
     @media (min-width:$tablet) {
         width: calc((100% - 30px) / 2);
+        height: 440px;
     }
     
     @media (min-width:$desktop) {

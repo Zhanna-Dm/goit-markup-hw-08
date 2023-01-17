@@ -1303,12 +1303,14 @@ a.navigation__item--current {
   }
 }
 
-.portfolio__filters li:not(:first-child) {
-  margin-left: 8px;
+@media (min-width: 768px) {
+  .portfolio__filters li:not(:first-child) {
+    margin-left: 8px;
+  }
 }
 @media (max-width: 767px) {
   .portfolio__filters li {
-    width: 33.3333333333%;
+    width: calc(33.33% - 15px);
   }
 }
 
@@ -1332,6 +1334,7 @@ a.navigation__item--current {
 @media (min-width: 768px) {
   .project-cards li {
     width: calc((100% - 30px) / 2);
+    height: 440px;
   }
 }
 @media (min-width: 1200px) {
