@@ -18,6 +18,7 @@
     justify-content: center;
 
     @media (max-width: $tablet-before) {
+        display: inline-flex;
         flex-wrap: wrap;
         justify-content: flex-start;
         gap: 8px;
@@ -33,7 +34,8 @@
     }
 
     @media (max-width: $tablet-before) {
-        width: calc(33.33% - 15px);
+        // width: calc(33.33% - 15px);
+        // width: 30%;
     }
 }
 

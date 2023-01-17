@@ -1294,6 +1294,9 @@ a.navigation__item--current {
 }
 @media (max-width: 767px) {
   .portfolio__filters {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: start;
@@ -1308,12 +1311,6 @@ a.navigation__item--current {
     margin-left: 8px;
   }
 }
-@media (max-width: 767px) {
-  .portfolio__filters li {
-    width: calc(33.33% - 15px);
-  }
-}
-
 /* Projects */
 @media (min-width: 768px) {
   .project-cards {
