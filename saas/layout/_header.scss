@@ -1,25 +1,25 @@
 /* Header */
 
-.navigation__box {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
-    font-weight: 500;
-    font-size: 14px;
-    line-height: calc(16 / 12);
-    letter-spacing: 0.02em;
-}
-
 .header {
     border-bottom: 1px solid #ECECEC;
 }
 
-.navigation {
-  
+.navigation__box, .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // width: 100%;
+    
+    @media (min-width:$mobile) and (max-width: $tablet-before) {
+        width: $mobile;
+    }
+    
+        font-weight: 500;
+        font-size: 14px;
+        line-height: calc(16 / 12);
+        letter-spacing: 0.02em;
 }
 
-.navigation,
 .navigation__items,
 .contacts--header {
     display: flex;
@@ -70,6 +70,14 @@
     border: none;
     background-color: aqua;
     background-color: transparent;  
+}
+
+ .hamburger-menu__button.is-open .icon-cross {
+     display: block;
+    }
+
+.hamburger-menu__button.is-open .icon-menu {
+    display: none;
 }
 
  .hamburger-menu__button .icon-cross {
