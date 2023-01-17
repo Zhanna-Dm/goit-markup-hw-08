@@ -97,8 +97,8 @@
         }
     }
 
-    @media (mnx-width:$tablet) {
-        width: calc((100% - 3 *20px) / 3);
+    @media (min-width:$tablet) {
+        width: calc((100% - 30px) / 2);
     }
     
     @media (min-width:$desktop) {

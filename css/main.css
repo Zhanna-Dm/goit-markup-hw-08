@@ -1329,9 +1329,9 @@ a.navigation__item--current {
     margin-bottom: 30px;
   }
 }
-@media (mnx-width: 768px) {
+@media (min-width: 768px) {
   .project-cards li {
-    width: calc((100% - 60px) / 3);
+    width: calc((100% - 30px) / 2);
   }
 }
 @media (min-width: 1200px) {
@@ -1430,6 +1430,7 @@ a.navigation__item--current {
 .footer-contacts__list a {
   display: inline-block;
   text-align: center;
+  margin: auto;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
