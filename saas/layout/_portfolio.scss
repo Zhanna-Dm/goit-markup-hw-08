@@ -17,10 +17,16 @@
     display: flex;
     justify-content: center;
 
-    @media (max-width: 1199px) {
-        // flex-wrap: wrap;
-        // justify-content: flex-start;
+    @media (max-width: $tablet-before) {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        // width: 326px;
     }
+
+    // @media (max-width: 1199px) {
+    //     // flex-wrap: wrap;
+    //     // justify-content: flex-start;
+    // }
 }
 
 .portfolio__filters li {
@@ -28,8 +34,9 @@
         margin-left: 8px;
     }
 
-    @media (max-width: 1199px) {
+    @media (max-width: $tablet-before) {
         width: calc((80% - 2 *8px) / 3);
+        margin-left: 0;
     }
 }
 

@@ -1292,12 +1292,23 @@ a.navigation__item--current {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media (max-width: 767px) {
+  .portfolio__filters {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
 .portfolio__filters li:not(:first-child) {
   margin-left: 8px;
 }
-@media (max-width: 1199px) {
+@media (max-width: 767px) {
   .portfolio__filters li {
     width: calc((80% - 16px) / 3);
+    margin-left: 0;
   }
 }
 
