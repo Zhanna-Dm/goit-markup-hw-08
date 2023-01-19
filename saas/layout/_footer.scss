@@ -63,6 +63,12 @@ address {
     @media (min-width: $tablet) {
         display: flex;
         align-items: baseline;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    @media (min-width: $desktop) {
+        flex-wrap: nowrap;
     }
 }
 

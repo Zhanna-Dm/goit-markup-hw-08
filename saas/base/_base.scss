@@ -24,6 +24,10 @@ html {
     background-color: $main-background-color;
 }
 
+body .modal-open {
+    overflow: hidden;
+}
+
 a {
     &:visited,
     &:link,
