@@ -10,11 +10,6 @@
     align-items: center;
     justify-content: space-between;
  
-
-    @media (min-width:$mobile) and (max-width: $tablet-before) {
-        // width: $mobile;
-        }
-    
     font-weight: 500;
     font-size: 14px;
     line-height: calc(16 / 12);

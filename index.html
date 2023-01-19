@@ -29,8 +29,7 @@
             <span class="logo__studio--header">Studio</span>
           </a>
 
-          <button type="button" 
-          class="hamburger-menu__button is-open" 
+          <button type="button" class="hamburger-menu__button is-open" 
           aria-expanded="false"
           aria-controls="nav__hamburger-menu"
           data-menu-button>
@@ -43,6 +42,68 @@
             </svg>
           </button>
 
+            <!--Modal window - hamburger menu -->
+
+            <!-- <div class="backdrop is-hidden" data-modal>
+              <div class="modal">
+                <button data-modal-close class="modal__close-icon">
+                  <svg  width="30" height="30">
+                    <use href="./images/icons.svg#icon-close"></use>
+                  </svg>
+                </button> -->
+                
+              <div class="nav__hamburger-menu" id="nav__hamburger-menu" data-menu>
+              <ul class="navigation__items">
+              <li class="navigation__item">
+                <a class="navigation__item--current" href="./index.html">Студія</a>
+              </li>
+              <li class="navigation__item">
+                <a
+                  class="navigation__link link--active"
+                  href="./portfolio.html"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a
+                  class="navigation__link link--active "
+                  href="#"
+                  >Контакти</a
+                >
+              </li>
+            </ul>
+
+              <!--Contacts-->
+          <ul class="contacts--header nav__mob-hidden">
+            <li class="navigation__item"> 
+              <a
+                class="contacts__link navigation__link link--active"
+                href="mailto:info@devstudio.com"
+              >
+              <svg class="contacts__icon" width="16" height="12">
+                  <use href="./images/icons.svg#envelope"></use>
+              </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a
+                class="contacts__link navigation__link link--active"
+                href="tel:+380961111111"
+              >
+                <svg class="contacts__icon" width="10" height="16">
+                  <use href="./images/icons.svg#smartphone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+          </div>
+
+              </div>
+            </div>    
+
+
           <!-- <div class="backdrop is-hidden" data-modal>
             <div class="modal">
               <button type="button" data-modal-close="">
@@ -51,53 +112,6 @@
             </div>
           </div> -->
 
-          <div class="nav__hamburger-menu" id="nav__hamburger-menu" data-menu>
-            <ul class="navigation__items">
-            <li class="navigation__item">
-              <a class="navigation__item--current" href="./index.html">Студія</a>
-            </li>
-            <li class="navigation__item">
-              <a
-                class="navigation__link link--active"
-                href="./portfolio.html"
-                >Портфоліо</a
-              >
-            </li>
-            <li class="navigation__item">
-              <a
-                class="navigation__link link--active "
-                href="#"
-                >Контакти</a
-              >
-            </li>
-          </ul>
-
-            <!--Contacts-->
-        <ul class="contacts--header nav__mob-hidden">
-          <li class="navigation__item"> 
-            <a
-              class="contacts__link navigation__link link--active"
-              href="mailto:info@devstudio.com"
-            >
-            <svg class="contacts__icon" width="16" height="12">
-                <use href="./images/icons.svg#envelope"></use>
-            </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="navigation__item">
-            <a
-              class="contacts__link navigation__link link--active"
-              href="tel:+380961111111"
-            >
-              <svg class="contacts__icon" width="10" height="16">
-                <use href="./images/icons.svg#smartphone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
-          </div>
           
         </nav>
       </div>
