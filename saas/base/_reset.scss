@@ -29,11 +29,13 @@ a {
 }
 
 button {
-    padding-top: none;
-    padding-left: none;
-    padding-right: none;
-    padding-bottom: none;
+    // padding-top: none;
+    // padding-left: none;
+    // padding-right: none;
+    // padding-bottom: none;
+    padding: 0;
     border: 0;
+    border-radius: 0;
 }
 
 

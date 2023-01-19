@@ -29,7 +29,11 @@
             <span class="logo__studio--header">Studio</span>
           </a>
 
-          <button type="button" class="hamburger-menu__button is-open" data-menu-button>
+          <button type="button" 
+          class="hamburger-menu__button is-open" 
+          aria-expanded="false"
+          aria-controls="nav__hamburger-menu"
+          data-menu-button>
             <svg 
             width="40" 
             height="40"
@@ -39,7 +43,15 @@
             </svg>
           </button>
 
-          <div class="nav__hamburger-menu">
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <button type="button" data-modal-close="">
+                Close
+              </button>
+            </div>
+          </div>
+
+          <div class="nav__hamburger-menu" id="nav__hamburger-menu" data-menu>
             <ul class="navigation__items">
             <li class="navigation__item">
               <a class="navigation__item--current" href="./index.html">Студія</a>

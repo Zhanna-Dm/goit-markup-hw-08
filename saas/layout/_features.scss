@@ -15,16 +15,6 @@
 }
 
 .features__items {
-    // &:li:not(:last-child) {
-    //     @media screen and (max-width:767px) {
-    //         margin-bottom: 30px;
-    //     }
-
-    //     @media screen and (min-width:$desktop) {
-    //         margin-right: 30px;
-    //     }
-    // }
-
     @media screen and (min-width:$tablet) {
         display: flex;
         // align-items: flex-start;
