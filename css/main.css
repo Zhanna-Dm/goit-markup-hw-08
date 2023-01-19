@@ -671,12 +671,6 @@ textarea {
   line-height: 1.3333333333;
   letter-spacing: 0.02em;
 }
-@media (min-width: 480px) and (max-width: 767px) {
-  .navigation {
-    width: 480px;
-  }
-}
-
 @media (max-width: 767px) {
   .nav__hamburger-menu {
     display: none;
@@ -778,7 +772,6 @@ textarea {
     line-height: 47px;
     letter-spacing: 0.02em;
     color: #212121;
-    text-align: left;
   }
 }
 
@@ -793,6 +786,12 @@ textarea {
 @media (min-width: 768px) {
   a.navigation__item--current {
     color: #2196f3;
+  }
+}
+
+@media (max-width: 767px) {
+  .navigation__items {
+    text-align: left;
   }
 }
 

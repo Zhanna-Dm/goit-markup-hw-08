@@ -12,7 +12,7 @@
  
 
     @media (min-width:$mobile) and (max-width: $tablet-before) {
-        width: $mobile;
+        // width: $mobile;
         }
     
     font-weight: 500;
@@ -128,8 +128,6 @@
         line-height: 47px;
         letter-spacing: 0.02em;
         color: $main-color;
-
-        text-align: left;
     }
 }
 
@@ -149,6 +147,12 @@ a.navigation__item--current {
    
 }
 
+
+.navigation__items {
+    @media (max-width: $tablet-before) {
+        text-align: left;
+    } 
+}
 .navigation__item {
     position: relative;
 }
