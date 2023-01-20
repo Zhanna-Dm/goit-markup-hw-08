@@ -20,7 +20,7 @@
   </head>
 
   <body class="body">
-    <header class="header">
+     <header class="header">
       <!--Menu Nav-->
       <div class="container navigation__box">
         <nav class="navigation">
@@ -29,8 +29,32 @@
             <span class="logo__studio--header">Studio</span>
           </a>
 
-          <ul class="navigation__items">
-            <li class="navigation__item">
+          <button type="button" class="hamburger-menu__button is-open" 
+          aria-expanded="false"
+          aria-controls="nav__hamburger-menu"
+          data-menu-button>
+            <svg 
+            width="24px" 
+            height="24px"
+            aria-label="Переключатель мобильного меню">
+              <use class="icon-cross" href="./images/icons.svg#icon-hamb-menu_close"></use>
+              <use class="icon-menu" href="./images/icons.svg#icon-hamb-menu_open"></use>
+            </svg>
+          </button>
+
+            <!--Modal window - hamburger menu -->
+
+            <!-- <div class="backdrop is-hidden" data-modal>
+              <div class="modal">
+                <button data-modal-close class="modal__close-icon">
+                  <svg  width="30" height="30">
+                    <use href="./images/icons.svg#icon-close"></use>
+                  </svg>
+                </button> -->
+                
+              <div class="nav__hamburger-menu" id="nav__hamburger-menu" data-menu>
+              <ul class="navigation__items">
+               <li class="navigation__item">
               <a class="navigation__link link--active
               " href="./index.html">Студія</a>
             </li>
@@ -48,34 +72,73 @@
                 >Контакти</a
               >
             </li>
-          </ul>
-        </nav>
+            </ul>
 
-        <!--Contacts-->
-        <ul class="contacts--header">
-          <li class="navigation__item"> 
-            <a
-              class="contacts__link navigation__link link--active"
-              href="mailto:info@devstudio.com"
-            >
-            <svg class="contacts__icon" width="16" height="12">
-                <use href="./images/icons.svg#envelope"></use>
-            </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="navigation__item">
-            <a
-              class="contacts__link navigation__link link--active"
-              href="tel:+380961111111"
-            >
-              <svg class="contacts__icon" width="10" height="16">
-                <use href="./images/icons.svg#smartphone"></use>
+              <!--Contacts-->
+          <ul class="contacts--header nav__mob-hidden">
+            <li class="navigation__item"> 
+              <a
+                class="contacts__link navigation__link link--active email"
+                href="mailto:info@devstudio.com"
+              >
+              <svg class="contacts__icon" width="16" height="12">
+                  <use href="./images/icons.svg#envelope"></use>
               </svg>
-              +38 096 111 11 11
-            </a>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a
+                class="contacts__link navigation__link link--active phone"
+                href="tel:+380961111111"
+              >
+                <svg class="contacts__icon" width="10" height="16">
+                  <use href="./images/icons.svg#smartphone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+
+          <!--Social links in hamberger menu-->
+        <ul class="social-links--hamburger">
+          <li class="social-link--hamburger">
+              <a href="" class="link">
+                Instagram
+              </a>
           </li>
-        </ul>
+          <li class="social-link--hamburger">
+              <a href="" class="link">
+                Twitter
+              </a>
+          </li>
+          <li class="social-link--hamburger">
+              <a href="" class="link">
+                Facebook
+              </a>
+          </li>
+          <li class="social-link--hamburger">
+              <a href="" class="link">
+                LinkedIn
+              </a>
+          </li>
+        </ul>  
+        </div>
+
+              </div>
+            </div>    
+
+
+          <!-- <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <button type="button" data-modal-close="">
+                Close
+              </button>
+            </div>
+          </div> -->
+
+          
+        </nav>
       </div>
     </header>
 
@@ -511,5 +574,8 @@
       </div>
     </footer>
 
+    <script src="./js/menu.js"></script>  
+    <script src="./js/modal.js"></script>
+  
   </body>
 </html>
