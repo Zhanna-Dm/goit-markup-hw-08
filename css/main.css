@@ -698,15 +698,18 @@ textarea {
 }
 
 .hamburger-menu__button {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding: 11px;
   margin: 0;
   border: none;
   background-color: transparent;
   background-color: aquamarine;
+  position: absolute;
+  top: 10px;
+  right: 10px;
   cursor: pointer;
-  padding: 11px;
   z-index: 1;
   fill: black;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);

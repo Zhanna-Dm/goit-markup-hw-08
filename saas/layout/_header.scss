@@ -53,12 +53,12 @@
     border: none;
     background-color: transparent;
     background-color: aquamarine;
-        // position: absolute;
+        position: absolute;
+        top: 10px;
+        right: 10px;
         // top: 0;
         // left: 87%;
-        // position: absolute;
-        // // top: 8px;
-        // // right: 8px;
+
         // display: flex;
         // justify-content: center;
         // align-items: center;
@@ -68,9 +68,9 @@
                 
         fill: black;
         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        &.is-open {
-            position: absolute;]
-        }
+        // &.is-open {
+        //     position: absolute;
+        // }
     }
 
 
