@@ -168,6 +168,10 @@
     @media (min-width: $tablet) and (max-width: $desktop-before) {
         display: table-column;
         margin-left: 96px;
+
+        & .email {
+            margin-bottom: 10px;
+        }
     }
 
     @media (min-width: $desktop) {

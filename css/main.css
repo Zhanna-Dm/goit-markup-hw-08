@@ -813,6 +813,9 @@ textarea {
     display: table-column;
     margin-left: 96px;
   }
+  .contacts--header .email {
+    margin-bottom: 10px;
+  }
 }
 @media (min-width: 1200px) {
   .contacts--header {
