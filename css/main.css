@@ -705,11 +705,22 @@ textarea {
   border: none;
   background-color: transparent;
   background-color: aquamarine;
+  cursor: pointer;
+  padding: 11px;
+  z-index: 1;
+  fill: black;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media (min-width: 768px) {
   .hamburger-menu__button {
     display: none;
   }
+}
+
+.icon-cross:hover,
+.icon-cross:focus {
+  fill: #2196f3;
 }
 
 .hamburger-menu__button.is-open .icon-menu {
@@ -836,13 +847,15 @@ textarea {
           align-items: center;
 }
 
+.contacts--header a {
+  color: #757575;
+}
 @media (min-width: 768px) {
   .contacts--header a {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1428571429;
     letter-spacing: 0.02em;
-    color: #757575;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1531,8 +1544,10 @@ address {
   }
 }
 
-.footer-blocks__item {
-  margin-bottom: 60px;
+@media (max-width: 767px) {
+  .footer-blocks__item:nth-child(-n+2) {
+    margin-bottom: 60px;
+  }
 }
 
 .footer__soclinks .social-icons {

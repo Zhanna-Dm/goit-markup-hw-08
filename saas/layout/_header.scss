@@ -45,7 +45,10 @@
         display: none;
     }
 
-    display: inline-flex;
+    display: block;
+    width: 40px;
+    height: 40px;
+    padding: 11px;
     margin: 0;
     border: none;
     background-color: transparent;
@@ -53,6 +56,27 @@
         // position: absolute;
         // top: 0;
         // left: 87%;
+        // position: absolute;
+        // // top: 8px;
+        // // right: 8px;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        cursor: pointer;
+        z-index: 1;
+                
+                
+        fill: black;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &.is-open {
+            position: absolute;]
+        }
+    }
+
+
+.icon-cross:hover,
+.icon-cross:focus {
+    fill: $link-hover-color;
 }
 
 .hamburger-menu__button.is-open .icon-menu {
@@ -66,6 +90,7 @@
 .hamburger-menu__button .icon-menu {
     display: none;
 }
+
 
 
 .navigation__items,
@@ -142,7 +167,6 @@ a.navigation__item--current {
    
 }
 
-
 .navigation__items {
     @media (max-width: $tablet-before) {
         text-align: left;
@@ -168,6 +192,7 @@ a.navigation__item--current {
     }
 }
 
+
 .link--active:hover,
 .link--active:focus {
     color: $link-hover-color;
@@ -179,12 +204,13 @@ a.navigation__item--current {
 }
 
 .contacts--header a {
+    color: $text-grey-color;
     @media (min-width: $tablet) {
         font-weight: 500;
         font-size: 14px;
         line-height: calc(16 / 14);
         letter-spacing: 0.02em;
-        color: $text-grey-color;
+     
         display: flex;
         
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);

@@ -76,8 +76,10 @@ address {
     }
 }
 
-.footer-blocks__item {
-    margin-bottom: 60px;
+.footer-blocks__item:nth-child(-n+2) {
+    @media (max-width: $tablet-before) {
+        margin-bottom: 60px;
+    }
 }
 
 
