@@ -930,10 +930,11 @@ textarea {
   letter-spacing: 0.02em;
   color: #2196f3;
 }
-.social-link--hamburger a:not(last-child) {
+
+.social-links--hamburger li:not(last-child) {
   margin-right: 20px;
 }
-.social-link--hamburger a:not(last-child)::after {
+.social-links--hamburger li:not(last-child)::after {
   content: "";
   border-right: 1px solid rgba(33, 33, 33, 0.2);
   margin-left: 10px;
