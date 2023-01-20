@@ -705,7 +705,7 @@ textarea {
   display: -ms-inline-flexbox;
   display: inline-flex;
   padding: 11px;
-  margin: 0;
+  margin: 10px;
   border: none;
   background-color: transparent;
   background-color: aquamarine;
@@ -720,12 +720,6 @@ textarea {
     display: none;
   }
 }
-.hamburger-menu__button.is-open {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
-
 .icon-cross:hover,
 .icon-cross:focus {
   fill: #2196f3;
@@ -788,7 +782,6 @@ textarea {
 
 .navigation__items a {
   display: inline-block;
-  padding-top: 32px;
   padding-bottom: 32px;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
