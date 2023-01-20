@@ -696,7 +696,7 @@ textarea {
     text-align: center;
   }
   .nav__hamburger-menu.is-open {
-    display: block;
+    display: inline-block;
   }
 }
 
@@ -704,8 +704,8 @@ textarea {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding: 11px;
-  margin: 10px;
+  padding: 8px;
+  margin: 10px 0px;
   border: none;
   background-color: transparent;
   background-color: aquamarine;
@@ -779,6 +779,17 @@ textarea {
 .contacts--header {
   margin-left: auto;
 }
+@media (max-width: 1199px) {
+  .contacts--header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+    margin-top: 306px;
+    gap: 32px;
+  }
+}
 
 .navigation__items a {
   display: inline-block;
@@ -796,8 +807,10 @@ textarea {
   }
 }
 
-.contacts--header .navigation__item + .navigation__item {
-  margin-left: 50px;
+@media (min-width: 1200px) {
+  .contacts--header .navigation__item + .navigation__item {
+    margin-left: 50px;
+  }
 }
 
 .navigation__items .navigation__item:not(:last-child) {
@@ -818,6 +831,22 @@ textarea {
 
 .navigation__item {
   position: relative;
+}
+@media (max-width: 767px) {
+  .navigation__item .phone {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    color: #2196f3;
+  }
+  .navigation__item .email {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color: #757575;
+  }
 }
 
 @media (min-width: 768px) {
@@ -879,6 +908,35 @@ textarea {
 .contacts__link:hover .contacts__icon,
 .contacts__link:focus .contacts__icon {
   fill: #2196f3;
+}
+
+.social-links--hamburger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 64px;
+  margin-bottom: 48px;
+}
+@media (min-width: 768px) {
+  .social-links--hamburger {
+    display: none;
+  }
+}
+
+.social-link--hamburger a {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+.social-link--hamburger a:not(last-child) {
+  margin-right: 20px;
+}
+.social-link--hamburger a:not(last-child)::after {
+  content: "";
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  margin-left: 10px;
 }
 
 /* Banner styles */

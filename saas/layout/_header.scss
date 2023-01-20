@@ -39,7 +39,7 @@
         // // transform: translate(-20%, -50%) scale(1);
         
         &.is-open {
-            display: block;
+            display: inline-block;
         }
     }
 }
@@ -50,8 +50,8 @@
     }
 
     display: inline-flex;
-    padding: 11px;
-    margin: 10px;
+    padding: 8px;
+    margin: 10px 0px;
     border: none;
     background-color: transparent;
     background-color: aquamarine;
@@ -136,6 +136,13 @@
 
 .contacts--header {
     margin-left: auto;
+
+    @media (max-width: $desktop-before) {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        margin-top: 306px;
+        gap: 32px;
+    }
 }
 
 .navigation__items a {
@@ -155,7 +162,9 @@
 }
 
 .contacts--header .navigation__item+.navigation__item {
-    margin-left: 50px;
+    @media (min-width: $desktop) {
+        margin-left: 50px;
+    }
 }
 
 .navigation__items .navigation__item:not(:last-child) {
@@ -167,7 +176,6 @@ a.navigation__item--current {
     @media (min-width: $tablet) {
         color: $link-hover-color;
     }
-   
 }
 
 .navigation__items {
@@ -175,8 +183,27 @@ a.navigation__item--current {
         text-align: left;
     } 
 }
+
 .navigation__item {
     position: relative;
+
+    @media (max-width: $tablet-before) {
+        .phone {
+            font-weight: 500;
+            font-size: 34px;
+            line-height: 40px;
+            letter-spacing: 0.02em;
+            color: $link-hover-color;
+        }
+
+        .email {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 28px;
+            letter-spacing: 0.02em;
+            color: $text-grey-color;
+        }
+    }
 }
 
 .navigation__item--current::after {
@@ -235,4 +262,31 @@ a.navigation__item--current {
 .contacts__link:hover .contacts__icon,
 .contacts__link:focus .contacts__icon {
     fill: $link-hover-color;  
+}
+
+.social-links--hamburger {
+    @media (min-width: $tablet) {
+        display: none;
+    }
+
+    display: flex;
+    margin-top: 64px;
+    margin-bottom: 48px;
+}
+
+.social-link--hamburger a {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: $link-hover-color;
+
+    &:not(last-child) {
+        margin-right: 20px;
+        &::after {
+            content: "";
+            border-right: 1px solid rgba(33, 33, 33, 0.2);
+            margin-left: 10px;
+        }
+    }
 }
