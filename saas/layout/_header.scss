@@ -18,9 +18,21 @@
     font-size: 14px;
     line-height: calc(16 / 12);
     letter-spacing: 0.02em;
+
+    @media (min-width: $tablet) {
+        margin: 10px 0px;
+    }
+
+    @media (min-width: $desktop) {
+        margin: 25px 0px;
+    }
 }
 
 .nav__hamburger-menu {
+    // @media (min-width: $tablet) {
+    //     display: none;
+    // }
+
     @media (max-width:$tablet-before) {
         display: none;
         
@@ -35,12 +47,18 @@
         // background-color: paleturquoise;
         padding: 48px 40px;
         text-align: center;
+        z-index: 100;
         // font-size: 40px;
         // // transform: translate(-20%, -50%) scale(1);
         
         &.is-open {
             display: inline-block;
         }
+    }
+
+    @media (min-width: $tablet) {
+        display: flex;
+        justify-content: space-between;
     }
 }
 
@@ -49,31 +67,34 @@
         display: none;
     }
 
-    display: inline-flex;
-    padding: 8px;
-    margin: 10px 0px;
-    border: none;
-    background-color: transparent;
+    @media (max-width: $tablet-before) {
+        display: inline-flex;
+        padding: 8px;
+        margin: 10px 0px;
+        border: none;
+        background-color: transparent;
         // background-color: aquamarine;
         // position: absolute;
-       
+    
         // top: 0;
         // left: 87%;
-
+    
         // display: flex;
         // justify-content: center;
         // align-items: center;
         cursor: pointer;
-        z-index: 1;       
-                
+        z-index: 101;
+    
         fill: black;
         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        
+    
         &.is-open {
             // // position: absolute;
             // top: 10px;
             // right: 10px;
         }
+    }
+    
     }
 
 
@@ -109,7 +130,7 @@
 
 .logo {
     display: flex;        
-    margin-right: 93px;
+    // margin-right: 93px;
 
     font-family: "Raleway";
     font-style: normal;
@@ -136,17 +157,26 @@
 
 .contacts--header {
     margin-left: auto;
+    display: flex;
 
-    @media (max-width: $desktop-before) {
-        display: flex;
+    @media (max-width: $tablet-before) {
         flex-wrap: wrap-reverse;
         margin-top: 306px;
         gap: 32px;
     }
+
+    @media (min-width: $tablet) and (max-width: $desktop-before) {
+        display: table-column;
+        margin-left: 96px;
+    }
+
+    @media (min-width: $desktop) {
+        margin-left: 315px;
+    }
 }
 
-.navigation__items {
 
+.navigation__items {
     @media (max-width: $tablet-before) {
         display: block;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -239,15 +269,19 @@ a.navigation__item--current {
     color: $text-grey-color;
     @media (min-width: $tablet) {
         font-weight: 500;
-        font-size: 14px;
-        line-height: calc(16 / 14);
+        font-size: 12px;
+        line-height: calc(14 / 12);
         letter-spacing: 0.02em;
      
-        display: flex;
+        // display: flex;
         
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-    
+
+    @media (min-width: $desktop) {
+        font-size: 14px;
+        line-height: calc(16 / 14);
+    }
 }
 
 .header-mail-link {
@@ -270,29 +304,35 @@ a.navigation__item--current {
     fill: $link-hover-color;  
 }
 
+
 .social-links--hamburger {
     @media (min-width: $tablet) {
         display: none;
     }
-
-    display: flex;
-    margin-top: 64px;
-    margin-bottom: 48px;
+    @media (max-width: $tablet-before) {}
+        display: flex;
+        margin-top: 64px;
+        margin-bottom: 48px;
 }
 
 .social-link--hamburger a {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-    letter-spacing: 0.02em;
-    color: $link-hover-color;
+    @media (max-width: $tablet-before) {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.02em;
+        color: $link-hover-color;
+    }
 }
 
 .social-links--hamburger li:not(:last-child) {
-    margin-right: 20px;
-    &::after {
-        content: "";
-        border-right: 1px solid rgba(33, 33, 33, 0.2);
-        margin-left: 10px;
+    @media (max-width: $tablet-before) {
+        margin-right: 20px;
+        
+        &::after {
+            content: "";
+            border-right: 1px solid rgba(33, 33, 33, 0.2);
+            margin-left: 10px;
+        }
     }
 }

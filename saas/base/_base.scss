@@ -42,21 +42,21 @@ a {
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-    background-color: orange;
+    // background-color: orange;
 
     @media screen and (min-width:480px) {
         width: 480px;
-        background-color: bisque;
+        // background-color: bisque;
         }
 
     @media screen and (min-width:768px) {
         width: 768px;
-        background-color: olivedrab;
+        // background-color: olivedrab;
     }
 
     @media screen and (min-width:1200px) {
         width: 1200px;
-        background-color: palevioletred;
+        // background-color: palevioletred;
     }
 }
 

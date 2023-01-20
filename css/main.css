@@ -220,24 +220,20 @@ a:visited, a:link, a:active {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  background-color: orange;
 }
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
-    background-color: bisque;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
-    background-color: olivedrab;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
-    background-color: palevioletred;
   }
 }
 
@@ -682,6 +678,16 @@ textarea {
   line-height: 1.3333333333;
   letter-spacing: 0.02em;
 }
+@media (min-width: 768px) {
+  .navigation {
+    margin: 10px 0px;
+  }
+}
+@media (min-width: 1200px) {
+  .navigation {
+    margin: 25px 0px;
+  }
+}
 
 @media (max-width: 767px) {
   .nav__hamburger-menu {
@@ -694,31 +700,45 @@ textarea {
     background-color: #ffffff;
     padding: 48px 40px;
     text-align: center;
+    z-index: 100;
   }
   .nav__hamburger-menu.is-open {
     display: inline-block;
   }
 }
-
-.hamburger-menu__button {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 8px;
-  margin: 10px 0px;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  z-index: 1;
-  fill: black;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+@media (min-width: 768px) {
+  .nav__hamburger-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
+
 @media (min-width: 768px) {
   .hamburger-menu__button {
     display: none;
   }
 }
+@media (max-width: 767px) {
+  .hamburger-menu__button {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding: 8px;
+    margin: 10px 0px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 101;
+    fill: black;
+    -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
 .icon-cross:hover,
 .icon-cross:focus {
   fill: #2196f3;
@@ -753,7 +773,6 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 93px;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
@@ -777,16 +796,27 @@ textarea {
 /* Nav styles, Contacts */
 .contacts--header {
   margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
-@media (max-width: 1199px) {
+@media (max-width: 767px) {
   .contacts--header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -ms-flex-wrap: wrap-reverse;
         flex-wrap: wrap-reverse;
     margin-top: 306px;
     gap: 32px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .contacts--header {
+    display: table-column;
+    margin-left: 96px;
+  }
+}
+@media (min-width: 1200px) {
+  .contacts--header {
+    margin-left: 315px;
   }
 }
 
@@ -882,14 +912,17 @@ textarea {
 @media (min-width: 768px) {
   .contacts--header a {
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.1428571429;
+    font-size: 12px;
+    line-height: 1.1666666667;
     letter-spacing: 0.02em;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+@media (min-width: 1200px) {
+  .contacts--header a {
+    font-size: 14px;
+    line-height: 1.1428571429;
   }
 }
 
@@ -926,22 +959,25 @@ textarea {
     display: none;
   }
 }
-
-.social-link--hamburger a {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 22px;
-  letter-spacing: 0.02em;
-  color: #2196f3;
+@media (max-width: 767px) {
+  .social-link--hamburger a {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: #2196f3;
+  }
 }
 
-.social-links--hamburger li:not(:last-child) {
-  margin-right: 20px;
-}
-.social-links--hamburger li:not(:last-child)::after {
-  content: "";
-  border-right: 1px solid rgba(33, 33, 33, 0.2);
-  margin-left: 10px;
+@media (max-width: 767px) {
+  .social-links--hamburger li:not(:last-child) {
+    margin-right: 20px;
+  }
+  .social-links--hamburger li:not(:last-child)::after {
+    content: "";
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    margin-left: 10px;
+  }
 }
 
 /* Banner styles */
