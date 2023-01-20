@@ -58,27 +58,30 @@ address {
 
 .footer__blocks {
     text-align: center;
-
+    @media (min-width: $desktop) {
+        text-align: left;
+    }
 
     @media (min-width: $tablet) {
         display: flex;
-        align-items: baseline;
         flex-wrap: wrap;
-        justify-content: space-around;
+        align-items: baseline;
+        justify-content: space-evenly;
     }
+
 
     @media (min-width: $desktop) {
         flex-wrap: nowrap;
+        justify-content: space-between;
     }
 }
 
-// .footer-blocks__item {
-//     display: flex;
-//     justify-content: center;
-// }
+.footer-blocks__item {
+    margin-bottom: 60px;
+}
+
 
 .footer__soclinks {
-    margin-left: 70px;
 
     & .social-icons {
         display: flex;
@@ -154,12 +157,16 @@ address {
 
 /* Footer subscription block */
 
-.footer__subsctiption {
-    margin-left: auto;
+.footer__subscription {
+    @media (min-width: $tablet) and (max-width: $desktop-before) {
+        margin-top: 60px;
+        align-items: center;
+    }
 }
 
 .subscription-line {
-    @media (min-width: $tablet) {
+    text-align: center;
+    @media (min-width: $desktop) {
         display: flex;
     }
 
@@ -176,6 +183,9 @@ address {
         height: 50px;
         padding: 15px;
         margin-right: 12px;
+        @media (max-width: $tablet-before) {
+            margin-right: 0px;
+        }
 
         font-weight: 400;
         font-size: 16px;
@@ -202,6 +212,11 @@ address {
     }
 }
 
+.subscription__input-box {
+    @media (max-width: $desktop-before) {
+        margin-bottom: 20px;
+    }
+}
 
 .btn--subscription {
     display: flex;
@@ -211,6 +226,12 @@ address {
     padding: 10px 28px;
     border-radius: 4px;
     cursor: pointer;
+
+    @media (max-width: $desktop-before) {
+        & button {
+            margin: 0 auto;
+        }
+    }
 
     font-weight: 700;
     font-size: 16px;
