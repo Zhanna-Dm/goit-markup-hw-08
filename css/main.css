@@ -661,6 +661,9 @@ textarea {
 /* Header */
 .header {
   border-bottom: 1px solid #ECECEC;
+}
+
+.navigation__box {
   position: relative;
 }
 
@@ -698,17 +701,14 @@ textarea {
 }
 
 .hamburger-menu__button {
-  display: block;
-  width: 40px;
-  height: 40px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   padding: 11px;
   margin: 0;
   border: none;
   background-color: transparent;
   background-color: aquamarine;
-  position: absolute;
-  top: 10px;
-  right: 10px;
   cursor: pointer;
   z-index: 1;
   fill: black;
@@ -719,6 +719,11 @@ textarea {
   .hamburger-menu__button {
     display: none;
   }
+}
+.hamburger-menu__button.is-open {
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 
 .icon-cross:hover,
